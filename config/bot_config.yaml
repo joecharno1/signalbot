@@ -4,11 +4,11 @@
 signal_service: "127.0.0.1:8080"
 
 # Bot's phone number (must be registered with Signal)
-phone_number: "+1234567890"  # Replace with your bot's phone number
+phone_number: "+12035442924"  # Your desired phone number
 
 # Admin phone numbers (can use bot commands)
 admin_numbers:
-  - "+1234567890"  # Replace with admin phone numbers
+  - "+12035442924"  # Use your number as admin
   # - "+0987654321"
 
 # Idle user detection settings
@@ -16,7 +16,7 @@ idle_threshold_days: 30  # Users inactive for this many days are considered idle
 
 # Protected users (never removed, even if idle)
 protected_users:
-  - "+1234567890"  # Bot's own number
+  - "+12035442924"  # Bot's own number
   # - "+0987654321"  # Other protected numbers
 
 # Safety settings
