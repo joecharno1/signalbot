@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  signal-cli-rest-api:
+    image: bbernhard/signal-cli-rest-api:latest
+    container_name: signal-cli-rest-api
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./signal-cli-config:/home/.local/share/signal-cli"
+    environment:
+      - MODE=json-rpc  # Use json-rpc mode for best performance with bots
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/v1/about"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add the bot container (uncomment to run bot in Docker too)
+  # signal-idle-bot:
+  #   build:
+  #     context: ..
+  #     dockerfile: docker/Dockerfile
+  #   container_name: signal-idle-bot
+  #   depends_on:
+  #     signal-cli-rest-api:
+  #       condition: service_healthy
+  #   volumes:
+  #     - "../config:/app/config"
+  #     - "../data:/app/data"
+  #   environment:
+  #     - SIGNAL_SERVICE=signal-cli-rest-api:8080
+  #     - PHONE_NUMBER=${BOT_PHONE_NUMBER}
+  #   restart: unless-stopped
+
+volumes:
+  signal-cli-config:
+

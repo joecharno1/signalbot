@@ -1,0 +1,19 @@
+{
+  "accounts" : [ {
+    "path" : "449766",
+    "environment" : "LIVE",
+    "number" : "+1234567890",
+    "uuid" : null
+  }, {
+    "path" : "193022",
+    "environment" : "LIVE",
+    "number" : "+12035442924",
+    "uuid" : "42e82664-11d1-4a74-8771-409798e5d3c0"
+  }, {
+    "path" : "432326",
+    "environment" : "LIVE",
+    "number" : "+13053370554",
+    "uuid" : "79e80a7b-21fe-4f01-a36f-6b625609f998"
+  } ],
+  "version" : 2
+}

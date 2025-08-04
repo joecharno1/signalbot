@@ -1,0 +1,30 @@
+# Signal Idle User Bot Configuration
+
+# Signal service connection (signal-cli-rest-api)
+signal_service: "127.0.0.1:8080"
+
+# Bot's phone number (must be registered with Signal)
+phone_number: "+1234567890"  # Replace with your bot's phone number
+
+# Admin phone numbers (can use bot commands)
+admin_numbers:
+  - "+1234567890"  # Replace with admin phone numbers
+  # - "+0987654321"
+
+# Idle user detection settings
+idle_threshold_days: 30  # Users inactive for this many days are considered idle
+
+# Protected users (never removed, even if idle)
+protected_users:
+  - "+1234567890"  # Bot's own number
+  # - "+0987654321"  # Other protected numbers
+
+# Safety settings
+dry_run: true  # Set to false to actually remove users (DANGEROUS!)
+
+# Data storage
+activity_file: "data/user_activity.json"
+
+# Logging
+log_level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+

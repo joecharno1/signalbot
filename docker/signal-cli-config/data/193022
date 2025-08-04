@@ -1,0 +1,42 @@
+{
+  "version" : 10,
+  "timestamp" : 1754260601904,
+  "serviceEnvironment" : "LIVE",
+  "registered" : false,
+  "number" : "+12035442924",
+  "username" : null,
+  "encryptedDeviceName" : null,
+  "deviceId" : 1,
+  "isMultiDevice" : false,
+  "password" : "eQsQ888XrCG4s6zZD2i+MDZZ",
+  "aciAccountData" : {
+    "serviceId" : "42e82664-11d1-4a74-8771-409798e5d3c0",
+    "registrationId" : 213,
+    "identityPrivateKey" : "8M8PnEcEjndZ0MlB18u5xS50ougFmQHjyKRYKCHd1kU=",
+    "identityPublicKey" : "BSWNX+n7zpZ7H22p/EqDRnDnN7so7Ge5XDW5DMMOI6lr",
+    "nextPreKeyId" : 10797081,
+    "nextSignedPreKeyId" : 7933815,
+    "activeSignedPreKeyId" : 7933814,
+    "nextKyberPreKeyId" : 11755276,
+    "activeLastResortKyberPreKeyId" : 11755175
+  },
+  "pniAccountData" : {
+    "serviceId" : "PNI:3f89489b-401d-48b7-a437-2620a3eedb05",
+    "registrationId" : 2458,
+    "identityPrivateKey" : "wNn9WW9o+aLVIok3wnq1DXLzXyR7CTO7e/LOlS8AVGk=",
+    "identityPublicKey" : "BfyQ8qxiWFooEpSzIugjSv33lS9dlehaqvy2+mUyHdBw",
+    "nextPreKeyId" : 2614885,
+    "nextSignedPreKeyId" : 11166320,
+    "activeSignedPreKeyId" : 11166319,
+    "nextKyberPreKeyId" : 13111419,
+    "activeLastResortKyberPreKeyId" : 13111318
+  },
+  "registrationLockPin" : null,
+  "pinMasterKey" : null,
+  "storageKey" : null,
+  "accountEntropyPool" : null,
+  "mediaRootBackupKey" : null,
+  "profileKey" : "gdp18j/ekYTg0YmlCODBJ876aRy3yEntLhFIVRKat1w=",
+  "usernameLinkEntropy" : null,
+  "usernameLinkServerId" : null
+}
